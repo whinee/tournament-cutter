@@ -12,6 +12,7 @@ mako:
       - changelog.mako
     glob:
       - docs/**/**/index.mako
+      - docs/**/**/index.mako
 
 md_vars:
   global:

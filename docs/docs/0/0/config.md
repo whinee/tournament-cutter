@@ -14,25 +14,17 @@ The following are the CFLOP for different OSes:
 flowchart TD
     A([CFLOP]) --> L[--config argument]
         L --> B{OS?}
-        B --> |*nix| C[./hyaku.yml]
+        B --> |*nix| C[./tc.yml]
             subgraph <br>
                 C --> D{"XDG<br>CONFIG<br>HOME<br>(XCH)?"}
-                D --> |true| E["${XCH}/hyaku/config.yml"] --> F
-                D --> |false| F["~/.config/hyaku/config.yml"]
-                F --> G["~/.hyk"]
-                G --> H["/etc/xdg/hyaku/config.yml"]
-                H --> I["/etc/hyaku/config.yml"]
+                D --> |true| E["${XCH}/tc/videos.yml"] --> F
+                D --> |false| F["~/.config/tc/videos.yml"]
+                F --> G["~/.tc"]
+                G --> H["/etc/xdg/tc/videos.yml"]
+                H --> I["/etc/tc/videos.yml"]
             end
-        B --> |Windows| J[.\hyaku.yml]
+        B --> |Windows| J[.\tc.yml]
             subgraph <br><br>
-                J --> K["${boot drive}:\\<br>Users\${username}\<br>AppData\Roaming\Hyaku\<br>config.yml"]
+                J --> K["${boot drive}:\\<br>Users\${username}\<br>AppData\Roaming\Hyaku\<br>videos.yml"]
             end
 ```
-
-### Config File Format
-
-#### Preferred Language of Translation (PLOT)
-
-
-
-PLOT is a language preferred by the user for the lookup of translations. It uses ISO 639-1 language codes.

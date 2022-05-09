@@ -2,14 +2,14 @@ import ast
 import itertools
 import os
 import re
+import shlex
 import sys
 import unicodedata
+from os import makedirs, path
 from os.path import dirname as dn
 from os.path import realpath as rp
-import shlex
 from subprocess import Popen
 from typing import Any
-from os import path, makedirs
 
 # https://stackoverflow.com/a/93029
 ALL_CHARS = (chr(i) for i in range(sys.maxunicode))

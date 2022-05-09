@@ -1,9 +1,10 @@
 from setuptools import find_packages, setup
+
 setup(
     name="tournament-cutter",
     author="whinee",
     author_email="whinyaan@pm.me",
-    version='0.0.0.0-alpha.0',
+    version='0.0.0.0-alpha.1',
     description='Process tetris tournament videos',
     long_description='''Process tetris tournament videos and cut them appropriately using FFmpeg..
     For full information, visit https://tc.comms.whinyaan.xyz''',

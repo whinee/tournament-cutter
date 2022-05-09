@@ -2,7 +2,6 @@ version: "0.0"
 output_directory: /home/whine/tc
 events:
   - event: TETR.IO Cup 8
-    template: tpl-1.png
     tournaments:
       - input: ip.mp4
         outputs:

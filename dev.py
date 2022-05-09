@@ -106,9 +106,9 @@ def bump():
             case "y":
                 with open("version", "wb") as f:
                     f.write(msgpack.packb(_vls, use_bin_type=True))
-                with open("ura/__init__.py", "r") as f:
+                with open("tc/__init__.py", "r") as f:
                     init = f.read()
-                with open("ura/__init__.py", "w") as f:
+                with open("tc/__init__.py", "w") as f:
                     init = re.sub(r"vls.+", f"vls = {_vls}", init)
                     f.write(re.sub(r"__version__.+", f"__version__ = '{rv(_vls)}'", init))
                 gen_script()

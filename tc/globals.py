@@ -11,7 +11,7 @@ if os.name != 'posix':
     POSIX = 0
 
     CFLOP = [
-        fr"{os.getcwd()}\ura.yml",
+        fr"{os.getcwd()}\tc.yml",
         fr"{os.getenv('USERPROFILE')}\AppData\Roaming\tc\videos.yml"
     ]
     LOCALE = locale.windows_locale[ctypes.windll.kernel32.GetUserDefaultUILanguage()][:2]

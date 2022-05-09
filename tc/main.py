@@ -5,10 +5,9 @@ from typing import Any
 
 from scripts.utils import inmd
 
-from .utils import run
-
 from . import globals
 from .settings import stg
+from .utils import run
 
 coords_keys = "whxy"
 tsd = {
@@ -29,7 +28,6 @@ def main(config: str, directory: str, **kwargs: dict[str, Any]):
     op_pdir = directory or v_stg["output_directory"]
     for event in v_stg["events"]:
         op_en_tpl = Template(op_tpl.safe_substitute(evt_name=event["event"]))
-        tpl = event["template"]
         for tnm in event["tournaments"]:
             vid_ip = tnm["input"]
             op_ff_ip_tpl = Template(op_ff_tpl.safe_substitute(ip=vid_ip))

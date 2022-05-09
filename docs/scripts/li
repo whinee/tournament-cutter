@@ -1,5 +1,5 @@
 #! /bin/sh
-curl -L -o tc.AppImage https://github.com/whinee/tournament-cutter/releases/download/0.0.0.0-alpha.0/tc-linux-x86_64.AppImage
+curl -L -o tc.AppImage https://github.com/whinee/tournament-cutter/releases/download/0.0.0.0-alpha.1/tc-linux-x86_64.AppImage
 chmod +x ./tc.AppImage
 ./tc.AppImage --appimage-extract
 rm -rf ./tc.AppImage
