@@ -1,0 +1,42 @@
+main:
+  args:
+  kwargs:
+  arguments:
+  options:
+cmd:
+  cut:
+    args:
+    kwargs:
+    help:
+      - cut tournament videos
+      - |-
+        Process tournament videos and cut them appropriately using FFmpeg.
+    arguments:
+    options:
+      c:
+        args:
+          - config
+        kwargs:
+          metavar: ''
+        help:
+          - str
+          - |-
+            Location of the configuration file to use.
+      d:
+        args:
+          - directory
+        kwargs:
+          metavar: ''
+        help:
+          - str
+          - |-
+            Location where to output the video and boards. Defaults to ~/tc for Linux-based operating systems and Desktop/tc for Windows.
+  version:
+    args:
+    kwargs:
+    help:
+      - Print version.
+      - |-
+        Print version of the program.
+    arguments:
+    options:

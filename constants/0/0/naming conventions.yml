@@ -1,0 +1,7 @@
+general:
+  idx:
+    abbr: index
+  XCH:
+    abbr: XDG_CONFIG_HOME
+  XDG:
+    abbr: X Development Group

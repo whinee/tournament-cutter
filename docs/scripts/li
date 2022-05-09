@@ -1,0 +1,18 @@
+#! /bin/sh
+curl -L -o tc.AppImage https://github.com/whinee/tournament-cutter/releases/download/0.0.0.0-alpha.0/tc-linux-x86_64.AppImage
+chmod +x ./tc.AppImage
+./tc.AppImage --appimage-extract
+rm -rf ./tc.AppImage
+rm -rf /usr/share/tc
+mv squashfs-root /usr/share/tc
+echo '#! /bin/sh
+"exec" "/usr/share/tc/usr/bin/python3.10" "$0" "$@"
+# -*- coding: utf-8 -*-
+import re
+import sys
+from tc.cli import cli
+if __name__ == "__main__":
+  sys.argv[0] = re.sub("r(-script\.pyw|\.exe)?$", "", sys.argv[0])
+  sys.exit(cli())' > /usr/bin/tc
+chmod +x /usr/bin/tc
+rm -rf linux-install.sh

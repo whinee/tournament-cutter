@@ -1,0 +1,5 @@
+cp:
+  cmd:
+    dir: tc/cmd
+  cf_tpl:
+    dir: tc/cf_tpl

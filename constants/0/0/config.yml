@@ -1,0 +1,101 @@
+version: 1.0.0
+config:
+  version:
+    type: str
+    desc: |-
+      Version of the YAML data.
+    example: |-
+      0.0
+  events:
+    type: list[dict[str, Any]]
+    desc: |-
+      Array of dictionary of events.
+    contents:
+      event:
+        type: str
+        desc: |-
+          Name of the event.
+      template:
+        type: str
+        desc: |-
+          Path to the template for the thumbnails.
+      tournaments:
+        type: list[dict[str, Any]]
+        desc: |-
+          Array of dictionary of tournaments.
+        contents:
+          input:
+            type: str
+            desc: |-
+              Path to the input video.
+          outputs:
+            type: list[dict[str, Any]]
+            desc: |-
+              Array of dictionary of outputs.
+            contents:
+              name:
+                type: str
+                desc: |-
+                  Name of the .
+                ex: |-
+                  op
+              timestamp:
+                type: dict[str, str]
+                desc: |-
+                  Timestamp range of the output video. Formatted in sexagesimal or in seconds.
+                contents:
+                  start:
+                    type: str
+                    desc: |-
+                      Start timestamp of the output video.
+                    example: |-
+                      00:12:38.000
+                  end:
+                    type: str
+                    desc: |-
+                      End timestamp of the output video.
+                    example: |-
+                      00:19:31.383
+              players:
+                type: list[dict[str, Any]]
+                desc: |-
+                  Array of dictionary of players.
+                contents:
+                  name:
+                    type: str
+                    desc: |-
+                      Name of the player.
+                    ex: |-
+                      whitespace_negative
+                  nationality:
+                    type: str
+                    desc: |-
+                      Nationality of the player. Uses ISO 3166-1 alpha-2 codes to distinguish countries.
+                    ex: |-
+                      ph
+                  board:
+                    type: list[dict[str, Any]]
+                    desc: |-
+                      Array of dictionary of boards.
+                    contents:
+                      coords:
+                        type: dict[str, int]
+                        desc: |-
+                          Dictionary of coordinates.
+                        contents:
+                          w:
+                            type: int
+                            desc: |-
+                              Width of the board.
+                          h:
+                            type: int
+                            desc: |-
+                              Height of the board.
+                          x:
+                            type: int
+                            desc: |-
+                              Horizontal position to start cropping from.
+                          'y':
+                            type: int
+                            desc: |-
+                              Vertical position to start cropping from.
