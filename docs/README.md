@@ -52,7 +52,7 @@ Website: [tc.comms.whinyaan.xyz](https://tc.comms.whinyaan.xyz)
 
 ---
 
-Commisioned by <a target="_blank" href="https://twitter.com/tsdjed">@tsdjed</a> (Discord, <a target="_blank" href="https://discord.com/users/250456851890569217">jed#1111</a>), Founder of<a target="_blank" href="https://teamtsd.net">Team TSD</a>.
+Commisioned by <a target="_blank" href="https://twitter.com/tsdjed">@tsdjed</a> (Discord, <a target="_blank" href="https://discord.com/users/250456851890569217">jed#1111</a>), Founder of <a target="_blank" href="https://teamtsd.net">Team TSD</a>.
 
 Interested in commisioning projects? Inquire through Discord(<a target="_blank" href="https://discord.com/users/867696753434951732">whi_ne | whinyaan.xyz#5135</a>) or through e-mail(<a target="_blank" href="mailto:whinyaan@pm.me">whinyaan@pm.me</a>). Price starts at 15 USD.
 
