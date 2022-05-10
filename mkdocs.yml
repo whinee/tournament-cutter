@@ -75,6 +75,35 @@ plugins:
 
 nav:
   - Home: /
+
+  # Do Not Modify!
+  - Installation:
+  # nav inst start
+    - Index: docs/0/0/installation/
+    - Installable:
+      - Index: docs/0/0/installation/installable
+      - Windows 7 and up: docs/0/0/installation/installable/windows
+      - Linux:
+        - Index: docs/0/0/installation/installable/linux/
+        - Arch: docs/0/0/installation/portable/linux/arch/
+        - Debian: docs/0/0/installation/portable/linux/debian/
+    - Portable:
+      - Index: docs/0/0/installation/portable
+      - Windows 7 and up: docs/0/0/installation/portable/windows
+      - Linux:
+        - Index: docs/0/0/installation/portable/linux/
+        - Arch: docs/0/0/installation/portable/linux/arch/
+        - Debian: docs/0/0/installation/portable/linux/debian/
+    - Programmatic:
+      - Index: docs/0/0/installation/programmatic
+      - Windows 7 and up: docs/0/0/installation/programmatic/windows
+      - MacOS: docs/0/0/installation/programmatic/macos
+      - Linux:
+        - Index: docs/0/0/installation/programmatic/linux/
+        - Arch: docs/0/0/installation/programmatic/linux/arch/
+        - Debian: docs/0/0/installation/programmatic/linux/debian/
+  # nav inst end
+
   - License agreement: /license
   - Changelog: /changelog
   - Notes:

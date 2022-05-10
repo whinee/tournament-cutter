@@ -1,8 +1,6 @@
 import itertools
 import re
 
-import tc
-
 from .md_vars import RULES_MDV
 from .settings import stg
 from .utils import ddir, inmd

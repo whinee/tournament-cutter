@@ -7,15 +7,94 @@ from pathlib import Path
 from typing import Any, Dict, List
 
 import frontmatter
-import msgpack
 import pdoc
 import yaml
 from mako.template import Template
 
+from tc import vls
+
 from .settings import stg, wr_stg
 from .utils import ddir, inmd, repl, stg
 
-RE_MDND = r"(?<=# nav docs start\n).+(?=\n\s+# nav docs end)"
+INST_LS = [
+    {
+        "Index": f"docs/{'/'.join([str(i) for i in vls[0:2]])}/installation/"
+    },
+    {
+        "Installable": [
+            {
+                "Index": f"docs/{'/'.join([str(i) for i in vls[0:2]])}/installation/installable"
+            },
+            {
+                "Windows 7 and up": f"docs/{'/'.join([str(i) for i in vls[0:2]])}/installation/installable/windows"
+            },
+            {
+                "Linux": [
+                    {
+                        "Index": f"docs/{'/'.join([str(i) for i in vls[0:2]])}/installation/installable/linux/"
+                    },
+                    {
+                        "Arch": f"docs/{'/'.join([str(i) for i in vls[0:2]])}/installation/portable/linux/arch/"
+                    },
+                    {
+                        "Debian": f"docs/{'/'.join([str(i) for i in vls[0:2]])}/installation/portable/linux/debian/"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Portable": [
+            {
+                "Index": f"docs/{'/'.join([str(i) for i in vls[0:2]])}/installation/portable"
+            },
+            {
+                "Windows 7 and up": f"docs/{'/'.join([str(i) for i in vls[0:2]])}/installation/portable/windows"
+            },
+            {
+                "Linux": [
+                    {
+                        "Index": f"docs/{'/'.join([str(i) for i in vls[0:2]])}/installation/portable/linux/"
+                    },
+                    {
+                        "Arch": f"docs/{'/'.join([str(i) for i in vls[0:2]])}/installation/portable/linux/arch/"
+                    },
+                    {
+                        "Debian": f"docs/{'/'.join([str(i) for i in vls[0:2]])}/installation/portable/linux/debian/"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Programmatic": [
+            {
+                "Index": f"docs/{'/'.join([str(i) for i in vls[0:2]])}/installation/programmatic"
+            },
+            {
+                "Windows 7 and up": f"docs/{'/'.join([str(i) for i in vls[0:2]])}/installation/programmatic/windows"
+            },
+            {
+                "MacOS": f"docs/{'/'.join([str(i) for i in vls[0:2]])}/installation/programmatic/macos"
+            },
+            {
+                "Linux": [
+                    {
+                        "Index": f"docs/{'/'.join([str(i) for i in vls[0:2]])}/installation/programmatic/linux/"
+                    },
+                    {
+                        "Arch": f"docs/{'/'.join([str(i) for i in vls[0:2]])}/installation/programmatic/linux/arch/"
+                    },
+                    {
+                        "Debian": f"docs/{'/'.join([str(i) for i in vls[0:2]])}/installation/programmatic/linux/debian/"
+                    }
+                ]
+            }
+        ]
+    }
+]
+
+RE_MD_TPL = r"(?<=# nav {key} start\n).+(?=\n\s+# nav {key} end)"
 
 YML = stg(None, "dev.yml")
 
@@ -31,9 +110,6 @@ IDF = Path(f'./{ddir(YML, "docs/input")}')
 CONTEXT = pdoc.Context()
 PROJECT = pdoc.Module(PDOC["project"], context=CONTEXT)
 pdoc.link_inheritance(CONTEXT)
-
-with open("./version", "rb") as f:
-    VLS = msgpack.unpackb(f.read(), raw=False, use_list=False)
 
 GEN = {
     "docs": [[], []],
@@ -53,14 +129,14 @@ def dd(od: Dict[str, List[str]], *dicts: List[Dict[str, List[str]]]) -> Dict[str
 def rules_fn(rules: Dict[Any, Any]) -> Dict[str, List[str]]:
     return dd({"": ddir(rules, "del", [])}, ddir(rules, "repl"))
 
-def docs_dir(mn: str, absolute: bool=True, api=False) -> str:
+def docs_dir(mn: str, absolute: bool=True, api: bool=False) -> str:
     mls = mn.split(".")
     if (len(mls) == 1) and (PDOC["project"] == mls[0]):
         mls[0] = "index"
     elif (len(mls) >= 2) and (PDOC["project"] == mls[0]):
         del mls[0]
     rel_ls = [
-        *[str(i) for i in VLS[0:2]],
+        *[str(i) for i in vls[0:2]],
         *mls[:-1],
         f"{mls[-1]}.md"
     ]
@@ -217,8 +293,15 @@ def main(rmv: Dict[Any, Any]={}, hr :bool=False):
         nd = yaml.dump(ndd, default_flow_style=False)
         nd = "\n".join([f'    - {i}' for i in nd.strip().split("\n")][::-1])
 
+        p_inst_ls = yaml.dump(INST_LS, default_flow_style=False)
+        p_inst_ls = "\n".join([f'    {i}' for i in p_inst_ls.strip().split("\n")])
+
         with open("mkdocs.yml", "r") as f:
             mkdocs = f.read()
+
+        mkdocs = re.sub(RE_MD_TPL.format(key="docs"), nd, mkdocs, 1, flags=re.DOTALL)
+        mkdocs = re.sub(RE_MD_TPL.format(key="inst"), p_inst_ls, mkdocs, 1, flags=re.DOTALL)
+
         with open("mkdocs.yml", "w") as f:
-            f.write(re.sub(RE_MDND, nd, mkdocs, re.S))
+            f.write(mkdocs)
         shutil.copy("mkdocs.yml", "mkdocs.yml.bak")

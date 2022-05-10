@@ -81,32 +81,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://tc.comms.whinyaan.xyz/docs/0/0/installation/Programmatic/</loc>
-         <lastmod>2022-05-10</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://tc.comms.whinyaan.xyz/docs/0/0/installation/Programmatic/macos/</loc>
-         <lastmod>2022-05-10</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://tc.comms.whinyaan.xyz/docs/0/0/installation/Programmatic/windows/</loc>
-         <lastmod>2022-05-10</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://tc.comms.whinyaan.xyz/docs/0/0/installation/Programmatic/Linux/</loc>
-         <lastmod>2022-05-10</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://tc.comms.whinyaan.xyz/docs/0/0/installation/Programmatic/Linux/arch/</loc>
-         <lastmod>2022-05-10</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://tc.comms.whinyaan.xyz/docs/0/0/installation/Programmatic/Linux/debian/</loc>
+         <loc>https://tc.comms.whinyaan.xyz/docs/0/0/installation/</loc>
          <lastmod>2022-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -121,17 +96,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://tc.comms.whinyaan.xyz/docs/0/0/installation/installable/Linux/</loc>
+         <loc>https://tc.comms.whinyaan.xyz/docs/0/0/installation/installable/linux/</loc>
          <lastmod>2022-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://tc.comms.whinyaan.xyz/docs/0/0/installation/installable/Linux/arch/</loc>
+         <loc>https://tc.comms.whinyaan.xyz/docs/0/0/installation/installable/linux/arch/</loc>
          <lastmod>2022-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://tc.comms.whinyaan.xyz/docs/0/0/installation/installable/Linux/debian/</loc>
+         <loc>https://tc.comms.whinyaan.xyz/docs/0/0/installation/installable/linux/debian/</loc>
          <lastmod>2022-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -146,17 +121,47 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://tc.comms.whinyaan.xyz/docs/0/0/installation/portable/Linux/</loc>
+         <loc>https://tc.comms.whinyaan.xyz/docs/0/0/installation/portable/linux/</loc>
          <lastmod>2022-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://tc.comms.whinyaan.xyz/docs/0/0/installation/portable/Linux/arch/</loc>
+         <loc>https://tc.comms.whinyaan.xyz/docs/0/0/installation/portable/linux/arch/</loc>
          <lastmod>2022-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://tc.comms.whinyaan.xyz/docs/0/0/installation/portable/Linux/debian/</loc>
+         <loc>https://tc.comms.whinyaan.xyz/docs/0/0/installation/portable/linux/debian/</loc>
+         <lastmod>2022-05-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://tc.comms.whinyaan.xyz/docs/0/0/installation/programmatic/</loc>
+         <lastmod>2022-05-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://tc.comms.whinyaan.xyz/docs/0/0/installation/programmatic/macos/</loc>
+         <lastmod>2022-05-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://tc.comms.whinyaan.xyz/docs/0/0/installation/programmatic/windows/</loc>
+         <lastmod>2022-05-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://tc.comms.whinyaan.xyz/docs/0/0/installation/programmatic/linux/</loc>
+         <lastmod>2022-05-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://tc.comms.whinyaan.xyz/docs/0/0/installation/programmatic/linux/arch/</loc>
+         <lastmod>2022-05-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://tc.comms.whinyaan.xyz/docs/0/0/installation/programmatic/linux/debian/</loc>
          <lastmod>2022-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
