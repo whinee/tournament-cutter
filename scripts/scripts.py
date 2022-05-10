@@ -3,13 +3,14 @@ import re
 
 import tc
 
+from .md_vars import RULES_MDV
 from .settings import stg
 from .utils import ddir, inmd
 
 RE_MX = r"(?<=\{matrix.)[a-zA-Z0-9-_]+?(?=\})"
 
 SCRIPTS = stg(None, "scripts.yml")
-MD_VARS = stg("md_vars", "dev.yml")
+MD_VARS = RULES_MDV["md_vars"]
 
 MATRIX = {}
 for k, v in SCRIPTS["matrix"].items():
@@ -20,8 +21,6 @@ with open("requirements.txt", "r") as f:
 
 PG = {
     "req": [i for i in REQ if i],
-    "ver": tc.__version__,
-    "prerel": not tc.vls[-2] == 3,
 }
 GLOBAL = {}
 for k, v in dict(

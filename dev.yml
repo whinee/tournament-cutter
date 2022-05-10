@@ -6,18 +6,11 @@ pdoc:
   project: tc
   op: docs
 
-mako:
-  gen:
-    path:
-      - changelog.mako
-    glob:
-      - docs/**/**/index.mako
-      - docs/**/**/index.mako
-
 md_vars:
   global:
     project_name: tc
     repo_name: tournament-cutter
+    formal_name: Tournament Cutter
     site: tc.comms.whinyaan.xyz
     scripts_url: tc.comms.whinyaan.xyz/scripts
     organization: whinee

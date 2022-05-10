@@ -1,83 +1,163 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://ura.hyaku.download/</loc>
-         <lastmod>2022-05-09</lastmod>
+         <loc>https://tc.comms.whinyaan.xyz/</loc>
+         <lastmod>2022-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ura.hyaku.download/changelog/</loc>
-         <lastmod>2022-05-09</lastmod>
+         <loc>https://tc.comms.whinyaan.xyz/changelog/</loc>
+         <lastmod>2022-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ura.hyaku.download/license/</loc>
-         <lastmod>2022-05-09</lastmod>
+         <loc>https://tc.comms.whinyaan.xyz/license/</loc>
+         <lastmod>2022-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ura.hyaku.download/notes%20to%20self/</loc>
-         <lastmod>2022-05-09</lastmod>
+         <loc>https://tc.comms.whinyaan.xyz/notes%20to%20self/</loc>
+         <lastmod>2022-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ura.hyaku.download/notes/</loc>
-         <lastmod>2022-05-09</lastmod>
+         <loc>https://tc.comms.whinyaan.xyz/notes/</loc>
+         <lastmod>2022-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ura.hyaku.download/docs/0/0/</loc>
-         <lastmod>2022-05-09</lastmod>
+         <loc>https://tc.comms.whinyaan.xyz/docs/0/0/</loc>
+         <lastmod>2022-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ura.hyaku.download/docs/0/0/config/</loc>
-         <lastmod>2022-05-09</lastmod>
+         <loc>https://tc.comms.whinyaan.xyz/docs/0/0/config/</loc>
+         <lastmod>2022-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ura.hyaku.download/docs/0/0/setup/</loc>
-         <lastmod>2022-05-09</lastmod>
+         <loc>https://tc.comms.whinyaan.xyz/docs/0/0/init/</loc>
+         <lastmod>2022-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ura.hyaku.download/docs/0/0/api/</loc>
-         <lastmod>2022-05-09</lastmod>
+         <loc>https://tc.comms.whinyaan.xyz/docs/0/0/api/</loc>
+         <lastmod>2022-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ura.hyaku.download/docs/0/0/api/cli/</loc>
-         <lastmod>2022-05-09</lastmod>
+         <loc>https://tc.comms.whinyaan.xyz/docs/0/0/api/cli/</loc>
+         <lastmod>2022-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ura.hyaku.download/docs/0/0/api/globals/</loc>
-         <lastmod>2022-05-09</lastmod>
+         <loc>https://tc.comms.whinyaan.xyz/docs/0/0/api/globals/</loc>
+         <lastmod>2022-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ura.hyaku.download/docs/0/0/api/init/</loc>
-         <lastmod>2022-05-09</lastmod>
+         <loc>https://tc.comms.whinyaan.xyz/docs/0/0/api/init/</loc>
+         <lastmod>2022-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ura.hyaku.download/docs/0/0/api/main/</loc>
-         <lastmod>2022-05-09</lastmod>
+         <loc>https://tc.comms.whinyaan.xyz/docs/0/0/api/main/</loc>
+         <lastmod>2022-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ura.hyaku.download/docs/0/0/api/settings/</loc>
-         <lastmod>2022-05-09</lastmod>
+         <loc>https://tc.comms.whinyaan.xyz/docs/0/0/api/settings/</loc>
+         <lastmod>2022-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ura.hyaku.download/docs/0/0/api/style/</loc>
-         <lastmod>2022-05-09</lastmod>
+         <loc>https://tc.comms.whinyaan.xyz/docs/0/0/api/style/</loc>
+         <lastmod>2022-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ura.hyaku.download/docs/0/0/api/utils/</loc>
-         <lastmod>2022-05-09</lastmod>
+         <loc>https://tc.comms.whinyaan.xyz/docs/0/0/api/utils/</loc>
+         <lastmod>2022-05-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://tc.comms.whinyaan.xyz/docs/0/0/installation/Programmatic/</loc>
+         <lastmod>2022-05-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://tc.comms.whinyaan.xyz/docs/0/0/installation/Programmatic/macos/</loc>
+         <lastmod>2022-05-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://tc.comms.whinyaan.xyz/docs/0/0/installation/Programmatic/windows/</loc>
+         <lastmod>2022-05-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://tc.comms.whinyaan.xyz/docs/0/0/installation/Programmatic/Linux/</loc>
+         <lastmod>2022-05-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://tc.comms.whinyaan.xyz/docs/0/0/installation/Programmatic/Linux/arch/</loc>
+         <lastmod>2022-05-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://tc.comms.whinyaan.xyz/docs/0/0/installation/Programmatic/Linux/debian/</loc>
+         <lastmod>2022-05-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://tc.comms.whinyaan.xyz/docs/0/0/installation/installable/</loc>
+         <lastmod>2022-05-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://tc.comms.whinyaan.xyz/docs/0/0/installation/installable/windows/</loc>
+         <lastmod>2022-05-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://tc.comms.whinyaan.xyz/docs/0/0/installation/installable/Linux/</loc>
+         <lastmod>2022-05-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://tc.comms.whinyaan.xyz/docs/0/0/installation/installable/Linux/arch/</loc>
+         <lastmod>2022-05-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://tc.comms.whinyaan.xyz/docs/0/0/installation/installable/Linux/debian/</loc>
+         <lastmod>2022-05-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://tc.comms.whinyaan.xyz/docs/0/0/installation/portable/</loc>
+         <lastmod>2022-05-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://tc.comms.whinyaan.xyz/docs/0/0/installation/portable/windows/</loc>
+         <lastmod>2022-05-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://tc.comms.whinyaan.xyz/docs/0/0/installation/portable/Linux/</loc>
+         <lastmod>2022-05-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://tc.comms.whinyaan.xyz/docs/0/0/installation/portable/Linux/arch/</loc>
+         <lastmod>2022-05-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://tc.comms.whinyaan.xyz/docs/0/0/installation/portable/Linux/debian/</loc>
+         <lastmod>2022-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

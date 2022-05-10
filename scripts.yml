@@ -11,13 +11,13 @@ matrix:
 
 scripts:
   pth:
-    path: docs/scripts/python${python_ver_nd}._pth
+    path: docs/scripts/${v_u}/${v_d}/python${python_ver_nd}._pth
     contents: |-
       python${python_ver_nd}.zip
       .
       import site
   bat:
-    path: docs/scripts/${project_name}.bat
+    path: docs/scripts/${v_u}/${v_d}/main.bat
     contents: |-
       @ECHO off
       pushd %~dp0
@@ -32,7 +32,7 @@ scripts:
       python Scripts\${project_name}.exe %*
       popd
   linux_install:
-    path: docs/scripts/li
+    path: docs/scripts/${v_u}/${v_d}/li
     contents: |-
       #! /bin/sh
       curl -L -o ${project_name}.AppImage https://github.com/${organization}/${repo_name}/releases/download/${ver}/${project_name}-linux-x86_64.AppImage
@@ -54,14 +54,14 @@ scripts:
       rm -rf linux-install.sh
 
   linux_dl:
-    path: docs/scripts/ld
+    path: docs/scripts/${v_u}/${v_d}/ld
     contents: |-
       #! /bin/sh
       curl -L -o ${project_name}.AppImage https://github.com/${organization}/${repo_name}/releases/download/${ver}/${project_name}-linux-x86_64.AppImage
       chmod +x ./${project_name}.AppImage
 
   win_install:
-    path: docs/scripts/wi${matrix.bits}
+    path: docs/scripts/${v_u}/${v_d}/wi${matrix.bits}
     contents: |-
       Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
       choco install -y curl
@@ -71,14 +71,14 @@ scripts:
         Remove-Item -Force -Recurse $FolderName
       }
       else {
-        "Set-Alias -Name ${project_name} -Value C:\${project_name}\${project_name}.bat" >> $PROFILE.CurrentUserAllHosts
+        "Set-Alias -Name ${project_name} -Value C:\${project_name}\main.bat" >> $PROFILE.CurrentUserAllHosts
         . $PROFILE.CurrentUserAllHosts
       }
       tar -xf ${project_name}.zip -C C:\
       Remove-Item -Force ${project_name}.zip
 
   win_portable:
-    path: docs/scripts/wp${matrix.bits}
+    path: docs/scripts/${v_u}/${v_d}/wp${matrix.bits}
     contents: |-
       Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
       choco install -y curl
@@ -264,8 +264,8 @@ scripts:
                 curl -sSL https://bootstrap.pypa.io/get-pip.py -o get-pip.py
                 tar -xf python.zip
                 del python310._pth
-                curl -sSL https://${scripts_url}/python310._pth -o python310._pth
-                curl -sSL https://${scripts_url}/${project_name}.bat -o ${project_name}.bat
+                curl -sSL https://${scripts_url}/${v_u}/${v_d}/python310._pth -o python310._pth
+                curl -sSL https://${scripts_url}/${v_u}/${v_d}/main.bat -o main.bat
                 .\python get-pip.py
                 .\python -m pip install .
                 del python.zip

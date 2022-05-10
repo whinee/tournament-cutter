@@ -1,8 +1,8 @@
-site_name: ura
-site_url: https://ura.hyaku.download
-repo_url: https://github.com/hyaku-dl/urasunday
+site_name: Tournament cutter
+site_url: https://tc.comms.whinyaan.xyz
+repo_url: https://github.com/whinee/tournament-cutter
 site_description: |-
-  Your basic urasunday scraper
+  Process tetris tournament videos
 site_author: whi~nyaan!
 copyright: Copyright &copy; 2022 whitespace_negative
 

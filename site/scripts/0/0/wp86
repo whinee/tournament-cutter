@@ -1,13 +1,9 @@
 Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 choco install -y curl
-curl 'https://github.com/whinee/tournament-cutter/releases/download/0.0.0.0-alpha.0/tc-winx86.zip' -o tc.zip
+curl 'https://github.com/whinee/tournament-cutter/releases/download/0.0.0.0-alpha.1/tc-winx86.zip' -o tc.zip
 $FolderName = 'C:\tc\'
 if (Test-Path $FolderName) {
   Remove-Item -Force -Recurse $FolderName
 }
-else {
-  "Set-Alias -Name tc -Value C:\tc\tc.bat" >> $PROFILE.CurrentUserAllHosts
-  . $PROFILE.CurrentUserAllHosts
-}
-tar -xf tc.zip -C C:\
+tar -xf tc.zip
 Remove-Item -Force tc.zip

@@ -2,6 +2,8 @@ import base64
 from datetime import date
 from functools import partial
 
+import tc
+
 from . import docs
 from .settings import stg
 from .utils import ddir
@@ -14,7 +16,8 @@ def b64(name: str):
         return base64.b64encode(f.read()).decode("utf-8")
 
 YML = stg(None, "dev.yml")
-GLOBAL = partial(ddir, ddir(YML, "md_vars/global"))
+R_GLOBAL = ddir(YML, "md_vars/global")
+GLOBAL = partial(ddir, R_GLOBAL)
 LICENSE = partial(ddir, ddir(YML, "license"))
 
 PN = GLOBAL("project_name")
@@ -46,11 +49,19 @@ RULES_MDV = {
         "global": {
             "year": str(date.today().year),
             "cholder": cholder,
-            **{f"{i}_b64": b64(f"{i}.png") for i in icons}
+            "ver": tc.__version__,
+            "prerel": not tc.vls[-2] == 3,
+            **{f"{i}_b64": b64(f"{i}.png") for i in icons},
+            **dict(
+                zip([f'v_{i}' for i in ["d", "u", "m", "p", "pri", "prv"]], tc.vls)
+            ),
+            **R_GLOBAL
         },
-        "local": {},
+        "local": {
+            **ddir(YML, "md_vars/local"),
+        },
     }
 }
 
-def main(hr=False):
+def main(hr: bool=False):
     docs.main(RULES_MDV, hr)

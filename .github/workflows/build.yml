@@ -133,8 +133,8 @@ jobs:
           curl -sSL https://bootstrap.pypa.io/get-pip.py -o get-pip.py
           tar -xf python.zip
           del python310._pth
-          curl -sSL https://tc.comms.whinyaan.xyz/scripts/python310._pth -o python310._pth
-          curl -sSL https://tc.comms.whinyaan.xyz/scripts/tc.bat -o tc.bat
+          curl -sSL https://tc.comms.whinyaan.xyz/scripts/0/0/python310._pth -o python310._pth
+          curl -sSL https://tc.comms.whinyaan.xyz/scripts/0/0/main.bat -o main.bat
           .\python get-pip.py
           .\python -m pip install .
           del python.zip

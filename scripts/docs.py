@@ -137,8 +137,8 @@ def main(rmv: Dict[Any, Any]={}, hr :bool=False):
         rf = frontmatter.load(rip)
         md = repl(rf.content, dd(rules_fn(RULES), rules_fn(rmv_r)))
 
-        d = dict(
-            MVC,
+        d = {
+            **MVC,
             **ddir(
                 MD_VARS_YML,
                 f"local/{rip.stem}"
@@ -147,8 +147,8 @@ def main(rmv: Dict[Any, Any]={}, hr :bool=False):
                 rmv_mv,
                 f"local/{rip.stem}"
             )
-        )
-        for k, v in d.items():
+        }
+        for k, v in {k: str(v) for k, v in d.items()}.items():
             md = md.replace(f"${{{k}}}", v)
 
         if title:=rf.get("title"):
@@ -170,34 +170,32 @@ def main(rmv: Dict[Any, Any]={}, hr :bool=False):
             f.write(yt)
         GEN["pdoc"][1].append(_dd)
 
-    makos = []
-
-    for g in MAKO["gen"]["glob"]:
-        for i in list(Path(".").rglob(g)):
-            makos.append(str(i))
-
-    for i in MAKO["gen"]["path"]:
-        ip = path.join(DOCS["input"], i)
-        if path.isfile(ip):
-            makos.append(ip)
-        else:
-            print(f"{ip} not found")
-
-    for ip in makos:
+    for ip in list(IDF.rglob("*.mako")):
+        ip = str(ip)
         pip = Path(ip)
         op = path.join(
             docs_pdir,
             *pip.parts[1:-1],
             f"{pip.stem}.md"
         )
-        print([ip, op])
         mytemplate = Template(filename=ip)
         tpl_rd = mytemplate.render(
             **{
-                "cwd": dn(ip),
+                "cwd": Path(dn(ip)),
+                "VARS": {
+                    **MVC,
+                    **ddir(
+                        MD_VARS_YML,
+                        f"local/{pip.stem}"
+                    ),
+                    **ddir(
+                        rmv_mv,
+                        f"local/{pip.stem}"
+                    )
+                },
             }
         )
-        with open(op, "w") as f:
+        with open(inmd(op, GEN["mako"][0]), "w") as f:
             f.write(tpl_rd)
         GEN["mako"][1].append(op)
 
