@@ -64,7 +64,7 @@ For the terms of usage and legals, visit [LICENSE](license) and [terms of usage 
 
 Since people are looking for the download first, here you go:
 
-Follow [this link](https://tc.comms.whinyaan.xyz/installation) to install `tc` in your machine.
+Follow [this link](https://tc.comms.whinyaan.xyz/docs/0/0/installation) to install `tc` in your machine.
 
 ### Supported OSes
 
@@ -87,7 +87,7 @@ Cutting:
 tc cut [OPTIONS]
 ```
 
-For programmatic use, visit the documentation: [tc.comms.whinyaan.xyz/docs](https://tc.comms.whinyaan.xyz/docs/index.html)
+For programmatic use, visit the documentation: [tc.comms.whinyaan.xyz/docs](https://tc.comms.whinyaan.xyz/docs/0/0)
 
 ## **Getting Started**
 
@@ -95,7 +95,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### **Setup**
 
-Follow [this link](https://tc.comms.whinyaan.xyz/installation) to install ura in your machine.
+Follow [this link](https://tc.comms.whinyaan.xyz/docs/0/0/installation) to install Tournament Cutter in your machine.
 
 ## **Contributions**
 

@@ -18,13 +18,13 @@ Part of the following is a summary of <a
     - 64-bit:
 
         ```ps
-        Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://tc.comms.whinyaan.xyz/scripts/0/0/wi64'))</code></pre>
+        Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://tc.comms.whinyaan.xyz/scripts/0/0/wi64'))
         ```
 
     - 32-bit:
 
         ```ps
-        Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://tc.comms.whinyaan.xyz/scripts/0/0/wi32'))</code></pre>
+        Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://tc.comms.whinyaan.xyz/scripts/0/0/wi32'))
         ```
 
 - You can now use tournament-cutter by running the following command:

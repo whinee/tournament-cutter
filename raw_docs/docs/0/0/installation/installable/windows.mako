@@ -18,13 +18,13 @@ Part of the following is a summary of <a
     - 64-bit:
 
         ```ps
-        Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://${VARS["scripts_url"]}/${"/".join(cwd.parts[2:4])}/wi64'))</code></pre>
+        Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://${VARS["scripts_url"]}/${"/".join(cwd.parts[2:4])}/wi64'))
         ```
 
     - 32-bit:
 
         ```ps
-        Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://${VARS["scripts_url"]}/${"/".join(cwd.parts[2:4])}/wi32'))</code></pre>
+        Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://${VARS["scripts_url"]}/${"/".join(cwd.parts[2:4])}/wi32'))
         ```
 
 - You can now use ${VARS["repo_name"]} by running the following command:
