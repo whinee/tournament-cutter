@@ -22,7 +22,7 @@
 </p>
 <p align="center">
     <a href="https://app.codacy.com/gh/whinee/tournament-cutter/dashboard?branch=master">
-        <img alt="Codacy Badge" src="https://img.shields.io/codacy/grade/385ceb2d55424256a93f9ad6f8007f91?style=flat-square">
+        <img alt="Codacy Badge" src="https://img.shields.io/codacy/grade/71ddc7b8f67c4a589357b6de243e682c?style=flat-square">
     </a>
     <a href="https://github.com/whinee/tournament-cutter/releases">
         <img alt="GitHub release (latest by date including pre-releases)" src="https://img.shields.io/github/v/release/whinee/tournament-cutter?include_prereleases&style=flat-square">
